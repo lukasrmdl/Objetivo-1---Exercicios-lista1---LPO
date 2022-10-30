@@ -4,6 +4,7 @@ import model.Carro;
 import model.Produto;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
 
 public class CarroController {
@@ -38,6 +39,8 @@ public class CarroController {
 
         //coleções
 
+
+        //list
         List<Carro> carros = new ArrayList<>();
         carros.add(carro1);
         carros.add(carro2);
@@ -48,6 +51,15 @@ public class CarroController {
 
         //terceiro carro da lista
         System.out.println(carros.get(2));
+
+        //map
+        Map<String, Carro> carrosMap = new HashMap<>(); 
+        carrosMap.put(carro1.getModelo(), carro1);
+        carrosMap.put(carro2.getModelo(), carro2);
+        carrosMap.put(carro3.getModelo(), carro3);
+        carrosMap.put(carro4.getModelo(), carro4);
+        carrosMap.put(carro5.getModelo(), carro5);
+        System.out.printLn(carrosMap);
 
     }
 }

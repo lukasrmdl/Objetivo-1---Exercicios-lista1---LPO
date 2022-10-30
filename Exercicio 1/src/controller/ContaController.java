@@ -4,6 +4,7 @@ import model.Carro;
 import model.Conta;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
 
 public class ContaController {
@@ -45,6 +46,15 @@ public class ContaController {
 
         //terceira conta da lista
         System.out.println(contas.get(2));
+
+        //map
+        Map<String, Conta> contasMap = new HashMap<>(); 
+        contasMap.put(conta1.getSaldo(), conta1);
+        contasMap.put(conta2.getSaldo(), conta2);
+        contasMap.put(conta3.getSaldo(), conta3);
+        contasMap.put(conta4.getSaldo(), conta4);
+        contasMap.put(conta5.getSaldo(), conta5);
+        System.out.printLn(contasMap);
 
     }
 }

@@ -3,6 +3,7 @@ package controller;
 import java.sql.Array;
 import java.text.NumberFormat;
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
 
 import model.Produto;
@@ -52,6 +53,15 @@ public class ProdutoController {
 
         //terceiro produto da lista
         System.out.println(produtos.get(2));
+
+        //map
+        Map<String, Produto> produtosMap = new HashMap<>(); 
+        produtosMap.put(produto1.getDescricao(), produto1);
+        produtosMap.put(produto2.getDescricao(), produto2);
+        produtosMap.put(produto3.getDescricao(), produto3);
+        produtosMap.put(produto4.getDescricao(), produto4);
+        produtosMap.put(produto5.getDescricao(), produto5);
+        System.out.printLn(produtosMap);
 
     }
 }

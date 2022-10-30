@@ -5,6 +5,7 @@ import model.Produto;
 
 import java.text.NumberFormat;
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
 
 public class FuncionarioController {
@@ -49,5 +50,14 @@ public class FuncionarioController {
 
         //terceiro funcionario da lista
         System.out.println(funcionarios.get(2));
+
+        //map
+        Map<String, Funcionario> funcionariosMap = new HashMap<>(); 
+        funcionariosMap.put(funcionario1.getNomeF(), funcionario1);
+        funcionariosMap.put(funcionario2.getNomeF(), funcionario2);
+        funcionariosMap.put(funcionario3.getNomeF(), funcionario3);
+        funcionariosMap.put(funcionario4.getNomeF(), funcionario4);
+        funcionariosMap.put(funcionario5.getNomeF(), funcionario5);
+        System.out.printLn(funcionariosMap);
     }
 }
