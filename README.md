@@ -1,1 +1,1 @@
-# Objetivo 1 - Lista1 - LPO
+# Objetivo 1 - Exercicios lista 1 - LPO
